@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>New Blog Post</h2>
+
+    <form method="post">
+    
+      <label>
+        <div>Subject *</div>
+          <input type="text" name="subject" value="{{subject}}">
+      </label>
+
+      <label>
+        <div>Blog Content *</div>
+          <textarea name="content">{{content}}</textarea>
+      </label>
+
+      <div "class=require">
+        <p><span class="require">*</span>- required </p>
+      </div>
+
+      <input type="submit" class="btn btn-primary" name="submit" value="Submit">
+      <input type="button" class="btn btn-primary" name="cancel" value="Cancel" onClick="history.go(-1);return true;">
+
+      <div class="error">{{error}}</div>
+
+    </form>
+{% endblock %}

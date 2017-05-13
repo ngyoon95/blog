@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Recent Posts</h3>
+
+  {% for p in posts %}
+    {{p.render() | safe }}
+    <br><br>
+  {% endfor %}
+
+{% endblock %}
+

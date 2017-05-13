@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <title>Sign Up</title>
+    <style type="text/css">
+      .label {text-align: right}
+      .error {color: red}
+    </style>
+        
+    <h2>Signup for New User</h2>
+    <form method="post" id="SignUpForm">
+      <p><label for="Username">User Name</label>
+      <input type="text1" name="username" value="{{username}}" placeholder="3-20 alphanumeric"><span class="error">{{error_username}}</span>
+    <p><label for="password">Password</label>
+      <input type="password" name="password" value="" placeholder="5-20 any characters"><span class="error">{{error_password}}</span>
+    <p><label for="verify">Verify Password</label>
+      <input type="password" name="verify" value="" placeholder="5-20 any characters"><span class="error">{{error_verify}}</span>
+    <p><label for="email">Email</label>
+      <input type="text1" name="email" value="" placeholder="Optional"><span class="error">{{error_email}}</span>
+ 
+      <div class="error">{{error}}</div>
+
+     <input type="submit" class="btn btn-primary" name="submit" value="Submit">
+    </form>
+{% endblock content %}  

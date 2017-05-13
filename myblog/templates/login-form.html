@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <title>Login</title>
+    <style type="text/css">
+      .label {text-align: right}
+      .error {color: red}
+    </style>
+
+    <h2>Sign in to Mutli User Blog</h2>
+    <form method="post" id="LoginForm">
+      <p><label for="username">User Name</label>
+      <input type="username" name="username" value="{{username}}" placeholder="3-20 alphanumeric"><span class="error">{{error_username}}</span>
+    <p><label for="password">Password</label>
+      <input type="password" name="password" value="" placeholder="5-20 any characters"><span class="error">{{error_password}}</span>
+
+      <div class="error">{{error}}</div>
+
+     <input type="submit" class="btn btn-primary" name="submit" value="Submit">
+    </form>
+{% endblock content %}

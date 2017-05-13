@@ -1,0 +1,136 @@
+body {
+    background-color: black;
+    padding: 10px;
+}
+
+.container {
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #333;
+/*    padding-top: 30px;*/
+    background-color: white;
+}
+
+.login-area {
+    font-size: 20px;
+    color: gray;
+/*    position: absolute;*/
+    text-align: left;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    padding: 10px; 
+    background-color: #64ece1;
+}
+
+.login-link {
+    color: orange;
+/*    font-size: 20px;*/ 
+    padding: 10px;
+    text-decoration: none;
+}
+
+.login-link:visited {
+    color: gray;
+}
+
+.login-link, .login-home:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: red;
+}
+
+label {
+  display: block;
+  font-size: 15px;
+}
+
+label + label {
+    margin-top: 20px;
+}
+
+input[type=text] {
+    width: 600px;
+    font-size: 15px;
+    padding: 2px;
+    font-family: monospace;
+}
+
+textarea {
+  width: 600px;
+  height: 400px;
+  font-size: 15px;
+  font-family: monospace;
+}
+
+input [type=submit], [type=button] {
+  font-size: 15px;
+}
+
+.main-title {
+    display: block;
+    color: #222;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+    background-color: #64ece1;
+}
+
+.post   {
+    padding: 5px;
+    color: black;
+    background-color:green;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.post + .post {
+    margin-top: 15px;
+}
+
+.post-heading {
+    margin-left: 5px;
+    position: relative;
+    font-size: 15px;
+    color: white;
+}
+
+
+.post-title {
+    font-weight: bold;
+}
+
+.post-date {
+/*    position: absolute;*/
+    right: 0px;
+    bottom: 0px;
+}
+
+.post-date, .post-title  {
+     margin-top: 5px;
+}
+
+.header {
+    background-color: white;  
+}
+
+.welcome {
+    color=red;
+    font-size: 17px;
+    font-weight: bold;
+}
